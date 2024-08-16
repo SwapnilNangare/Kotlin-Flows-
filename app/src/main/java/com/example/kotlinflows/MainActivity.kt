@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         consumer()
     }
 
+    // Channels Introduction
     fun producer() {
 
         CoroutineScope(Dispatchers.Main).launch {
