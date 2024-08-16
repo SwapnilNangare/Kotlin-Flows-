@@ -22,24 +22,27 @@ class MainActivity3 : AppCompatActivity() {
 
         GlobalScope.launch {
             producer()
-                .onStart {
-                    emit(-1)
-                    Log.d("Swap", "STARTING OUT")
-                }
-                .onCompletion {
-                    emit(11)
-                    Log.d("Swap", "COMPLETED")
+            /*
+             .onStart {
+                 emit(-1)
+                 Log.d("Swap", "STARTING OUT")
+             }
+             .onCompletion {
+                 emit(11)
+                 Log.d("Swap", "COMPLETED")
 
-                }
-                .onEach {
-                    Log.d("Swap", "ABOUT TO EMIT -$")
+             }
+             .onEach {
+                 Log.d("Swap", "ABOUT TO EMIT -$")
 
-                }
-                .collect {
-                    Log.d("Swap", "${it.toString()}")
+             }
+             .collect {
+                 Log.d("Swap", "${it.toString()}")
 
-                }
+             }
 
+
+             */
         }
     }
 
